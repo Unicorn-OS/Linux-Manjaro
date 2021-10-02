@@ -1,0 +1,11 @@
+https://wiki.manjaro.org/index.php/Switching_Branches
+
+Solution:
+https://forum.manjaro.org/t/nvidia-455xx-dkms-disappeared-from-aur-nvidia-dkms-not-in-manjaro-repo/40788/11
+
+
+```
+testing(){
+sudo pacman-mirrors --api --set-branch testing
+sudo pacman-mirrors --fasttrack 5 && sudo pacman -Syyu
+}
